@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+
+    {% load staticfiles %}
+     <style>
+    #content{
+    text-align:center;
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    img{
+    width:250px;
+    height:250px;}
+    p{
+    color:red;}
+    </style>
+</head>
+
+
+
+
+<body>
+
+
+
+
+<div id="content">
+    {% for post in object_list %}
+    <p>{{post.title}}</p>
+    <a href="{% url 'blog_detail' post.id %}"><img src="{{post.image.url}}"></a>
+    <li>Create_date:{{post.create_date}}</li>
+    <li>modify_date:{{post.modify_date}}</li>
+    {% endfor %}
+
+</body>
+</html>

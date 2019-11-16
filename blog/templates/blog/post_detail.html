@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://dohyeongsseu.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+    <style>
+        #content{
+        text-align:center;
+        }
+        disqus_thread{
+        t
+        width=500px;
+        height=500px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+
+    <h1 id="title">{{object.title}}</h1>
+    <div class="box">
+        <p>Description: {{object.description}}</p>
+        <p>create date: {{object.create_date}}</p>
+        <p>modify date: {{object.modify_date}}</p>
+        <img src="{{ object.image.url }}" width="600px" height="600px">
+        <div id="disqus_thread" ></div>
+    </div>
+</div>
+</body>
+</html>
