@@ -48,9 +48,10 @@
     <div id = "content">
         <h1 id="title">
             최<span class="small">고로</span>
-            애<span class="small">정하는</span>
+            싫<span class="small">어하는</span>
             유<span class="small">튜브</span>
         </h1>
+        <a href="{% url 'bookmark_create' %}"><button>CREATE</button></a>
 
         <ul>
             {% for bookmark in object_list %}

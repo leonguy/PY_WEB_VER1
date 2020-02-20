@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+            <div class="col-md-2">
+            </div>
+        <div class="col-md-2 pcd button">
+            <a href="{% url 'index' %}"><button type="submit">Go index</button></a>
+        </div>
+        <div class="col-md-2">
+            <img width="50%" height="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTTAF90QXZ9O1_Outgfdwin6J6rqwclg-t8TiH6dPgPvC4xX70V">
+        </div>
+        <div class="col-md-2 pcd button">
+            <a href="{% url 'login' %}"><button type="submit">sign in again</button></a>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+

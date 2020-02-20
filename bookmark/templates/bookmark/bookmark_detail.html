@@ -43,6 +43,8 @@
 <body>
 <div id = "content">
     <h1 id="title">{{ object.title }}</h1>
+    <a href="{% url 'bookmark_update' bookmark.id %}"><button>UPDATE 위로 데이트</button></a>
+    <a href="{% url 'bookmark_delete' bookmark.id %}"><button>ADIOS adidas</button></a>
     <ul>
         <li>URL: <a href="{{object.url}}">{{ object.url }}</a> </li>
         <li>Create Date: {{ object.create_date }} </li>

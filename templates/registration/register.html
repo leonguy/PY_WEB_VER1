@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+         <div class="col-md-4">
+
+        </div>
+         <div class="col-md-4">
+            <form method="post" action="."> {% csrf_token %}
+                <div class="row form_row">
+                    <div class="col-md-6">
+                        username &nbsp; <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <div class="col-md-6">
+                        {{form.username}}
+                    </div>
+                </div>
+                 <div class="row form_row">
+                    <div class="col-md-6">
+                        password1 &nbsp; <span class="glyphicon glyphicon-globe"></span>
+                    </div>
+                    <div class="col-md-6">
+                        {{form.password1}}
+                    </div>
+                </div>
+                 <div class="row form_row">
+                    <div class="col-md-6">
+                        password2  &nbsp; <span class="glyphicon glyphicon-globe"></span>
+                    </div>
+                    <div class="col-md-6">
+                        {{form.password2}}
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-danger form_btn">Sigh Up</button>
+                </div>
+            </form>
+        </div>
+         <div class="col-md-4">
+
+        </div>
+    </div>
+</div>
+
+
+<
+{% endblock content %}
+
+
+
+

@@ -35,6 +35,11 @@
     <li>Create_date:{{post.create_date}}</li>
     <li>modify_date:{{post.modify_date}}</li>
     {% endfor %}
-
+</div>
+<div id="create button">
+    <a href="{% url 'blog_create' %}">
+        <button>CREATE</button>
+    </a>
+</div>
 </body>
 </html>

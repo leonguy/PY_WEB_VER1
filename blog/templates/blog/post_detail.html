@@ -16,7 +16,7 @@ s.setAttribute('data-timestamp', +new Date());
         text-align:center;
         }
         disqus_thread{
-        t
+
         width=500px;
         height=500px;
 
@@ -25,6 +25,8 @@ s.setAttribute('data-timestamp', +new Date());
 </head>
 <body>
 <div id="content">
+    <a href="{% url 'post_update' post.id %}"><button>UPDATE</button></a>
+    <a href="{% url 'post_delete' post.id %}"><button>ADIOS ADIDAS</button></a>
 
     <h1 id="title">{{object.title}}</h1>
     <div class="box">

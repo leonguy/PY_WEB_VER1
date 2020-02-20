@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+         <div class="col-md-4">
+
+        </div>
+         <div class="col-md-4">
+<form method="post" action="."enctype="multipart/form-data">{% csrf_token %}
+     <div class="row form_row">
+                    <div class="col-md-6">
+                        title &nbsp; <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <div class="col-md-6">
+                        {{form.title}}
+                    </div>
+                </div>
+
+    <div class="row form_row">
+                    <div class="col-md-6">
+                        image &nbsp; <span class="glyphicon glyphicon-globe"></span>
+                    </div>
+                    <div class="col-md-6">
+                        {{form.image}}
+                    </div>
+                </div>
+                 <div class="row form_row">
+                    <div class="col-md-6">
+                        description  &nbsp; <span class="glyphicon glyphicon-globe"></span>
+                    </div>
+                    <div class="col-md-6">
+                        {{form.description}}
+                    </div>
+                </div>
+                <div>
+                   <button type="submit" class="btn btn-danger btn-submit-create">크리에이트/업데이트</button>
+                </div>
+</form>
+         </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+
+
